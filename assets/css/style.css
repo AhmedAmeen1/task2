@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.font-base {
+    font-family: "Inter", sans-serif;
+}
+
+.label-accent {
+    color: #3b82f6;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-section {
+    padding: 120px 0;
+}
+
+.featured-section {
+    background-color: #3b82f6;
+    color: white;
+    padding: 80px 0;
+}
+
+/* Blog */
+.blog-main-image {
+    aspect-ratio: 16 / 9;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.blog-item-image {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Blog Posts */
+.heading-underline {
+    position: relative;
+}
+
+.heading-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: #3b82f6;
+    border-radius: 2.5px;
+}
+
+.card-image {
+    aspect-ratio: 4 / 3;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 70px 0 30px;
+}
+
+.footer a {
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #3b82f6;
+}
+
+.footer .footer-heading {
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer .input-field {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    color: white;
+}
+
+.footer .input-field:focus {
+    background-color: #1f2937;
+    border-color: #3b82f6;
+    box-shadow: none;
+}
+
+.footer .input-field::placeholder {
+    color: #9ca3af;
+}
+
+.footer .submit-button {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .blog-main-image {
+        max-height: 200px;
+    }
+
+    .blog-item-image {
+        aspect-ratio: 16 / 9;
+        max-height: 120px;
+    }
+
+    .card-image {
+        max-height: 150px;
+    }
+}
